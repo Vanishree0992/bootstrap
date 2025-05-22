@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Z-Index Demo</title>
+  <link href="./bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+    .background-box {
+      height: 200px;
+      width: 100%;
+      background-color: lightblue;
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+<div class="background-box z-n1"></div>
+
+<div class="modal show d-block position-relative" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-header z-3 position-relative bg-primary text-white">
+        <h5 class="modal-title">Modal Header (z-3)</h5>
+      </div>
+      <div class="modal-body">
+        This is the modal body.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
